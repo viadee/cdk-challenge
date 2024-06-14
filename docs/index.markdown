@@ -1,13 +1,11 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 title: Start
 layout: post
 ---
 
 # Willkommen bei der viadee CDK Challenge auf der CloudLand 2024.
 
-Es gilt für Euch in Teams verschiedene IaC Aufgabenstellungen mit Hilfe von CDK zu meistern. 
+Es gilt für Euch in Teams verschiedene IaC Aufgabenstellungen mit Hilfe von CDK zu meistern.
 Jede der Aufgaben wird Euch zu einem neuen Level in der Challange führen.
 
 Das Team, das zuerst alle Aufgaben gelöst hat, gewinnt die Challange und neben Ruhm und Ehre

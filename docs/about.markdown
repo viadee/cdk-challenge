@@ -5,7 +5,7 @@ permalink: /about/
 ---
 
 # CDK Learning Challenge
-Powered by viadee 
+Powered by viadee
 www.viadee.de
 
 # Lust auf mehr?
