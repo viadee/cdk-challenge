@@ -1,5 +1,5 @@
-# pulumi-challenge
-Repository for the viadee cdk educational challenge
+# cdk-challenge
+Repository for the viadee CDK educational challenge
 
 [Start challenge](https://viadee.github.io/cdk-challenge/)
 
