@@ -1,0 +1,48 @@
+---
+layout: post
+title:  "Stufe 0: Einrichtung Pulumi und GCP-Account"
+date:   2024-06-14 08:54:52 +0000
+permalink: /einrichtung/
+---
+
+Nutzt den bereitgestellten Google Account und logged Euch ein:
+
+```bash
+gcloud auth application-default login
+```
+
+Das lokale Dateisystem als Speicher für den State konfigurieren:
+
+```bash
+pulumi login --local
+```
+
+Erzeugt ein neues Pulumi Projekt:
+
+```bash
+pulumi new gcp-typescript
+```
+
+(Name: `pulumi-challenge`, Stack: egal, GCP project: `viadee-pulumi-training`)
+
+In der `index.ts` die Bucket-Location auf `EU` ändern.
+
+Einen Namen für euer Team überlegen.
+
+Den String `"my-bucket"` auf den Teamnamen ändern.
+
+Den Bucket deployen:
+
+```bash
+pulumi up
+```
+
+Öffnet die Google Cloud Console und prüft, dass dort Euer Storage Bucket angelegt wurde: https://console.cloud.google.com/
+
+Sprecht uns an, zeigt uns Eure Ergebnisse und wir zeigen Euch den Weg zu Level 1.
+
+Final: Bereinigt die erzeugte Infrastruktur:
+
+```bash
+pulumi destroy
+```
