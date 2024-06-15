@@ -6,5 +6,5 @@ permalink: /vorbereitung/
 ---
 
 - Node.js installieren: [https://nodejs.org](https://nodejs.org)
-- AWS CLI installieren: [https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
-- AWS CDK installieren: [https://docs.aws.amazon.com/cdk/v2/guide/getting_started.html#getting_started_install](https://docs.aws.amazon.com/cdk/v2/guide/getting_started.html#getting_started_install)
+- AWS CLI installieren: [https://docs.aws.amazon.com/cli/](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
+- AWS CDK installieren: [https://docs.aws.amazon.com/cdk/](https://docs.aws.amazon.com/cdk/v2/guide/getting_started.html#getting_started_install)
