@@ -6,5 +6,5 @@ permalink: /vorbereitung/
 ---
 
 - Node.js installieren: [https://nodejs.org](https://nodejs.org)
-- Pulumi installieren: [https://www.pulumi.com/docs/install](https://www.pulumi.com/docs/install)
-- Google Cloud CLI installieren: [https://cloud.google.com/sdk/docs/install](https://cloud.google.com/sdk/docs/install)
+- AWS CLI installieren: [https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
+- AWS CDK installieren: [https://docs.aws.amazon.com/cdk/v2/guide/getting_started.html#getting_started_install](https://docs.aws.amazon.com/cdk/v2/guide/getting_started.html#getting_started_install)
