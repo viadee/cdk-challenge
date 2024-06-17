@@ -9,7 +9,7 @@ Die Message-Lambda soll mit Nachrichten aus der SQS Queue, die Ihr bei der Einri
 Hierfür bietet CDK mit Event Sources die Möglichkeit die Queue mit der Function zu verknüpfen.
 
 Hinweise:
-- Denkt immernoch daran Eure Ressourcen mit Eurem Teamnamen zu benennen.
+- Denkt immernoch daran Eure Ressourcen mit Eurem Teamnamen vorne weg zu benennen.
 - Stellt die Queue bereit, falls Ihr das bei der Einrichtung versäumt habt.
 - Überprüft, dass die Lambda-Function die SQS-Queue als Source darstellt.
 - Stellt Nachrichten in die Eure Queue ein, um zu prüfen, ob die Lambda-Function aufgerufen wird.
