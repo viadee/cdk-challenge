@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Stufe 3: SQS-Queue als Source für die Lambda-Function"
+title:  "Stufe 2: SQS-Queue als Source für die Lambda-Function"
 date:   2024-06-14 10:24:28 +0200
 permalink: /sqs-source/
 ---
