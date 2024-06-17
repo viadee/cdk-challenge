@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Stufe 2: TODO-APP mit Postgres-DB"
+title:  "Stufe 3: Message-App mit Dynamo-DB"
 date:   2024-06-14 10:24:28 +0200
-permalink: /postgres-db/
+permalink: /dynamo-db/
 ---
 
 Deployed die TODO-APP aus Level-1 mit einer Postgres-DB zur persistenten Datenhaltung.
