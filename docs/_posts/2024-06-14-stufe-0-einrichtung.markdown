@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Stufe 0: Einrichtung Pulumi und GCP-Account"
+title:  "Stufe 0: Einrichtung AWS-Account und CDK"
 date:   2024-06-14 10:24:28 +0200
 permalink: /einrichtung/
 ---
@@ -14,7 +14,7 @@ Erzeugt und speichert Euren `ACCESS_KEY` und `SECRET_KEY` über die AWS UI:
 
 ``` 
 viadee-cloudland24-cdk-challenge @ 9750-5029-6970 > 
-Sicherheitsanmeldinformationen > 
+Sicherheitsanmeldeinformationen > 
 Zugriffschlüssel erstellen > 
 Befehlszeilenschnittstelle (CLI)
 ```
@@ -31,7 +31,7 @@ Prüft den erfolgreichen Login per:
 aws sts get-caller-identity
 ```
 
-Überlegt euch einen Teamnamen und und erzeugt ein Verzeichnis per `mkdir -p <team_name>`. 
+Überlegt Euch einen Teamnamen und und erzeugt ein Verzeichnis per `mkdir -p <team_name>`. 
 Wechselt in dieses Verzeichnis und erzeugt ein neues CDK Projekt in Eurer Wahlsprache (z.B. `java`, `typescript`, `go`):
 
 ```bash
@@ -44,7 +44,9 @@ Im erzeugten Projekt befindet sich auskommentierter Code zum Erzeugen einer SQS 
 cdk deploy
 ```
 
-Öffnet AWS CloudFormation und prüft, dass dort Eure Queue angelegt wurde: https://eu-central-1.console.aws.amazon.com/cloudformation/home?region=eu-central-1
+Öffnet AWS CloudFormation und prüft, dass dort Eure Queue angelegt wurde: 
+
+[https://eu-central-1.console.aws.amazon.com/cloudformation/home?region=eu-central-1](https://eu-central-1.console.aws.amazon.com/cloudformation/home?region=eu-central-1)
 
 Sprecht uns an, zeigt uns Eure Ergebnisse und wir zeigen Euch den Weg zu Level 1.
 

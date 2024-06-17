@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "Stufe 1: Message-App Deployment als Lambda Function"
+title:  "Stufe 1: Message-App Deployment als Lambda-Function"
 date:   2024-06-14 10:24:28 +0200
 permalink: /message-app/
 ---
 
-Nutzt ein bereitgestelltes Container Image mit einer Message-App und deploye sie als Lambda Function.
+Nutzt ein bereitgestelltes Container Image mit einer Message-App und deploye sie als Lambda-Function.
 Die Applikation soll dann direkt als Lambda in der AWS GUI aufrufbar sein: 
 
 Hinweise:
