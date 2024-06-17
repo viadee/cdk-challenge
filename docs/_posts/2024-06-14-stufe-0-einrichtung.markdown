@@ -7,16 +7,19 @@ permalink: /einrichtung/
 
 Nutzt den bereitgestellten AWS Account und logged euch ein:
 
-https://975050296970.signin.aws.amazon.com/console
+[https://975050296970.signin.aws.amazon.com/console](https://975050296970.signin.aws.amazon.com/console)
 
 
-Erzeugt Euren `ACCESS_KEY` und `SECRET_KEY` über die AWS UI:
+Erzeugt und speichert Euren `ACCESS_KEY` und `SECRET_KEY` über die AWS UI:
 
 ``` 
-viadee-cloudland24-cdk-challenge @ 9750-5029-6970 > Sicherheitsanmeldinformationen > Zugriffschlüssel erstellen > Befehlszeilenschnittstelle (CLI)
+viadee-cloudland24-cdk-challenge @ 9750-5029-6970 > 
+Sicherheitsanmeldinformationen > 
+Zugriffschlüssel erstellen > 
+Befehlszeilenschnittstelle (CLI)
 ```
 
-Login per AWS CLI mit dem erzeugten Keys in der Region `eu-central-1`:
+Login per AWS CLI mit den erzeugten Keys in der Region `eu-central-1`:
 
 ```bash
 aws configure
