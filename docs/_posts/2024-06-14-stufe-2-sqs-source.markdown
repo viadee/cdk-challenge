@@ -5,19 +5,17 @@ date:   2024-06-14 10:24:28 +0200
 permalink: /webhook/
 ---
 
-Die TODO-APP aus dem letzten level bietet einen HTTP-Webhook an.
-Hierfür gilt es mit einer GCP Cloud Function einen Endpunkt bereitszustellen.
+Die Message-Lambda soll mit Nachrichten aus der SQS Queue, die Ihr bei der Einrichtung angelegt habt, gestartet werden.
+Hierfür bietet CDK mit Event Sources die Möglichkeit die Queue mit der Function zu verknüpfen.
 
 Hinweise:
-- Denkt immernoch daran Eure Ressourcen mit Eurem Team Namen vorne weg zubenennen.
-- Deployt eine Google Cloud Function, die den HTTP-Request-Body des Aufrufs mit `console.log` ins Log schreibt und mit dem HTTP-Status-Code 200 antwortet.
-- Bei Nutzung von `gcp.cloudfunctions.HttpCallbackFunction` könnt Ihr den Quelltext der Funktion direkt in den Pulumi-Code einbetten.
-- Konfiguriert die TODO-App so, dass die neue Funktion bei jeder Aktion an einem TODO-Element aufgerufen wird.
-    - Nutzt hierzu die Umgebungsvariable `QUARKUS_REST_CLIENT_WEBHOOK_URL`.
-- Überprüft, dass die Aktionen nun ins Log der Funktion geschrieben werden:
+- Denkt immernoch daran Eure Ressourcen mit Eurem Team Namen vorne weg zu benennen.
+- Stellt die Queue bereit, falls Ihr das bei der Einrichtung versäumt habt.
+- Überprüft, dass die Lambda-Function die SQS-Queue als Source darstellt.
+- Stellt Nachrichten in die Eure Queue ein, um zu prüfen, ob die Lambda-Function aufgerufen wird.
 
 
 ```bash
-gcloud functions list
-gcloud functions logs read <function-name>
+aws lambda list-functions
+aws lambda list-event-source-mappings --function-name <function-name>
 ```
