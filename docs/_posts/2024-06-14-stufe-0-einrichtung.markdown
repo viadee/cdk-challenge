@@ -46,7 +46,7 @@ cdk deploy
 
 Öffnet AWS CloudFormation und prüft, dass dort Eure Queue angelegt wurde: 
 
-[https://eu-central-1.console.aws.amazon.com/cloudformation/home?region=eu-central-1](https://eu-central-1.console.aws.amazon.com/cloudformation/home?region=eu-central-1)
+[https://eu-central-1.console.aws.amazon.com/cloudformation](https://eu-central-1.console.aws.amazon.com/cloudformation)
 
 Sprecht uns an, zeigt uns Eure Ergebnisse und wir zeigen Euch den Weg zu Level 1.
 
