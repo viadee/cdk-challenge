@@ -12,11 +12,11 @@ Hinweise:
 
 - Deployed eine Dynamo-DB mittels CDK:
     - Erzeugt einen Partition-Key mit dem Namen `id` vom Typ `String`.
-    - Erzeugt einw Tabelle mit Eurem Teamnamen vorne weg.
+    - Erzeugt eine Tabelle mit Eurem Teamnamen vorne weg.
     - Setzt die `removalPolicy` für die Tabelle auf `DESTROY`, damit Euer Stack reproduzierbar gebaut werden kann.
 - Bindet die Datenbank an die Message-Function an.
-    - Setzt die Umgebungsvariable in `DYNAMODB_TABLE_NAME`: `<TABLE_NAME>`
+    - Setzt die Umgebungsvariable in `DYNAMODB_TABLE_NAME`: `<EUER_TABELLEN_NAME>`
     - Fügt der Lambda-Function eine Policy mit der Action `dynamodb:PutItem` und dem Effect `ALLOW` auf die Table-Resource hinzu.
 - Überprüft, dass Message-Einträge in der DB persistiert werden.
 
-Achtung: Die Instanzierung der Table und des Partition-Keys braucht etwas Zeit. Eine gute Gelegenheit, um sich zum Beispiel mit etwas zu trinken zu versorgen.
+Achtung: Die Instanzierung der Tabelle und des Partition-Keys braucht etwas Zeit. Eine gute Gelegenheit, um sich zum Beispiel mit etwas zu trinken zu versorgen.
