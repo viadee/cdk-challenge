@@ -2,7 +2,7 @@
 layout: post
 title:  "Stufe 1: Deployment der Message-App als Lambda-Function"
 date:   2024-06-14 10:24:28 +0200
-permalink: /message-app/
+permalink: /message-function/
 ---
 
 Nutzt ein bereitgestelltes Container Image mit einer Message-App und deploye sie als Lambda-Function.
