@@ -1,25 +1,22 @@
 ---
 layout: post
-title:  "Stufe 3: Message-App mit Dynamo-DB"
+title:  "Stufe 3: Message-Function mit Dynamo-DB"
 date:   2024-06-14 10:24:28 +0200
 permalink: /dynamo-db/
 ---
 
-Deployed die TODO-APP aus Level-1 mit einer Postgres-DB zur persistenten Datenhaltung.
+Deployed die Message-Function aus Level-1 mit einer Dynamo-DB zur persistenten Datenhaltung.
 
 Hinweise:
-- Es steht ein angepasstes Container-Image für Euch bereit!
+- Ihr könnt das gleiche Image für die Function verwenden. Allerdings müsst ihr eine Umgebungsvariable und Policy hinzufügen, damit die Daten gespeichert werden. 
 
-- Deployed eine Postgres-DB mittels Google Cloud SQL
-    - Region: `europe-west3`,
-    - Tier: `db-f1-micro`.
-    - Setzt die `deletionProtection` für die Instanz auf `false`.
-- Bindet die Datenbank an die TODO-App an.
-    - Nutzt das für GCP SQL vorkonfigurierte Image `europe-west3-docker.pkg.dev/viadee-pulumi-training/demo-app/quarkus-todo-app:1.0-CLOUDSQL`
-    - Setzt die Umgebungsvariablen:
-        - `QUARKUS_DATASOURCE_USERNAME`, `QUARKUS_DATASOURCE_PASSWORD`: (Werte aus der `gcp.sql.Users`-Ressource)
-        - `QUARKUS_DATASOURCE_JDBC_URL`: `jdbc:postgresql:///<Name der DB>`
-        - `QUARKUS_DATASOURCE_JDBC_ADDITIONAL_JDBC_PROPERTIES_CLOUDSQLINSTANCE`: (Wert von connectionName aus der `gcp.sql.DatabaseInstance`)
-- Überprüft, dass TODO-Einträge in der DB persistiert werden.
+- Deployed eine Dynamo-DB mittels CDK:
+    - Erzeugt einen Partition-Key mit dem Namen `id` vom Typ `String`.
+    - Erzeugt ein Table mit Eurem Teamnamen vorne weg.
+    - Setzt die `removalPolicy` für die Instanz auf `DESTROY`.
+- Bindet die Datenbank an die Message-Function an.
+    - Setzt die Umgebungsvariable in `DYNAMODB_TABLE_NAME`: `<TABLE_NAME>`
+    - Fügt der Lambda-Function eine Policy mit der Action `dynamodb:PutItem` und dem Effect `ALLOW` auf die Table-Resource hinzu.
+- Überprüft, dass Message-Einträge in der DB persistiert werden.
 
-Achtung: Die Instanzierung des Postgres Services braucht etwas Zeit. Eine gute Gelegenheit, um sich zum Beispiel mit etwas zu trinken zu versorgen.
+Achtung: Die Instanzierung der Table und des Partition-Keys braucht etwas Zeit. Eine gute Gelegenheit, um sich zum Beispiel mit etwas zu trinken zu versorgen.
