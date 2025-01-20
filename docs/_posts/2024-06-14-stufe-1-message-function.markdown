@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title:  "Stufe 1: Deployment der Message-App als Lambda-Function"
 date:   2024-06-14 10:24:28 +0200
 permalink: /message-function/

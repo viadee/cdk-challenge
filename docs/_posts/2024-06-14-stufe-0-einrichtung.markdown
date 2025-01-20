@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title:  "Stufe 0: Einrichtung AWS-Account und CDK"
 date:   2024-06-14 10:24:28 +0200
 permalink: /einrichtung/
