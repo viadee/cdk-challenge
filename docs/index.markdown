@@ -1,6 +1,6 @@
 ---
 title: Start
-layout: post
+layout: default
 ---
 
 # Willkommen bei der viadee CDK Challenge auf der CloudLand 2024.

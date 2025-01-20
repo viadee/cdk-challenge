@@ -1,7 +1,7 @@
 ---
 layout: default
 title:  "Preparation"
-date:   2025-01-23 14:09:00 +0200
+date:   2025-01-20 00:00:00 +0200
 permalink: /preparation/
 ---
 
