@@ -3,17 +3,15 @@ title: Start
 layout: default
 ---
 
-# Willkommen bei der viadee CDK Challenge auf der CloudLand 2024.
+# Welcome to the viadee CDK challenge!
 
-Es gilt für Euch in Teams verschiedene IaC Aufgabenstellungen mit Hilfe von CDK zu meistern.
-Jede der Aufgaben wird Euch zu einem neuen Level in der Challange führen.
+This challenge consists of Infrastructure-as-Code exercises, which have to be completed using AWS CDK.
+Each exercise will lead you to the next of challenge.
 
-Das Team, das zuerst alle Aufgaben gelöst hat, gewinnt die Challange und neben Ruhm und Ehre
-wartet ein Preis auf Euch, mit dem ihr viel Freude haben werdet.
+The goal of the challenge is to learn working with CDK. 
+Alright? - Let's go!
 
-Im Vordergrund steht aber natürlich das Lernen und der Erfahrungsaufbau mit CDK!
-Also los geht's ....
+The links to the exercises will be provived by the tutor, if you finish the previous exercise.
 
-Die Links zu den Aufgaben erhaltet ihr von den Game-Mastern, sobald ihr die Aufgabenstellung eines Levels erfüllt habt.
 
-[Hier geht es zur Vorbereitung!](vorbereitung)
+[Go to the preparation!](preparation)
