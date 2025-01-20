@@ -21,14 +21,17 @@
 title: viadee CDK Challenge
 email: cloud@viadee.de
 description: >- # this means to ignore newlines until "baseurl:"
-  A CDK learning challenge. Powered by cloud@viadee
+  A CDK learning challenge. <br>
+  Powered by cloud@viadee
 #baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://viadee.de" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: jekyllrb
 github_username:  viadee
+github:
+  is_project_page: false
 
 # Build settings
-theme: minima
+theme: jekyll-theme-cayman
 plugins:
   - jekyll-feed
 
