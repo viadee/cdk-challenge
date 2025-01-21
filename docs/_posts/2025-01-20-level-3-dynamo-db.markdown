@@ -15,7 +15,7 @@ Notes:
   - Set the `removalPolicy` for the table to `DESTROY`. This configuration ensures that your Stack is reproducible.
 - Connect the database to your Message-Function.
   - Set the environment variable `DYNAMODB_TABLE_NAME` to `<YOUR_TABLE_NAME>`.
-  - Add a new policy to the Lambda-Function. Use the <i>Action</i> `dynamodb:PutItem` with the <i>Effect</i> `ALLOW` to your Table-resource.
+  - Add a new policy to the Lambda-Function. Use the <i>Action</i> `dynamodb:PutItem` with the <i>Effect</i> `ALLOW` with a reference to your Table-resource.
 - Check the AWS UI if the messages are persisted.
 
 Please note: The creation of the Table and Partition-Key needs a few seconds. A great opportunity for some pizza 🍕 
