@@ -8,7 +8,7 @@ permalink: /dynamo-db/
 Deploy the Message-Function (of Level 1) with a Dynamo-DB to persist the messages.
 
 Notes:
-- It is possible to you the same Image for the function. But you have to provide a environment varibale and a policy, to persist the data.
+- It is possible to keep using the same Image for the function. But you have to provide a environment varibale and a policy, to persist the data.
 - Deploy a Dynamo-DB with CDK:
   - Create a Partition-Key with the name `id` of type `String`.
   - Create a Table (with your project name as a prefix).
