@@ -2,7 +2,7 @@
 layout: default
 title:  "Vorbereitung"
 date:   2024-06-14 10:24:28 +0200
-permalink: /vorbereitung/
+permalink: /de/vorbereitung/
 ---
 
 - Node.js installieren: [https://nodejs.org](https://nodejs.org)

@@ -2,7 +2,7 @@
 layout: default
 title:  "Stufe 0: Einrichtung AWS-Account und CDK"
 date:   2024-06-14 10:24:28 +0200
-permalink: /einrichtung/
+permalink: /de/einrichtung/
 ---
 
 Nutzt den bereitgestellten AWS Account und logged euch ein:

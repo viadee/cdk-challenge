@@ -2,7 +2,7 @@
 layout: default
 title:  "Stufe 3: Message-Function mit Dynamo-DB"
 date:   2024-06-14 10:24:28 +0200
-permalink: /dynamo-db/
+permalink: /de/dynamo-db/
 ---
 
 Deployed die Message-Function aus Level-1 mit einer Dynamo-DB zur persistenten Datenhaltung.
