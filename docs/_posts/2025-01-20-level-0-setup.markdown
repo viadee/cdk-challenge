@@ -40,7 +40,7 @@ Go to the directory and create a CDK projekt in your language of choice (e.g. `j
 cdk init --language <LANG>
 ```
 
-In your project should be commented code to create a SQS Queue. Activate the code and create your CDK stack:
+In your project should be commented code to create a SQS Queue (in the Stack class or file). Activate the code and create your CDK stack:
 
 ```bash
 cdk deploy
