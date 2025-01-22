@@ -5,7 +5,7 @@ date:   2025-01-20 00:00:00 +0200
 permalink: /dynamo-db/
 ---
 
-Deploy the Message-Function (of Level 1) with a Dynamo-DB to persist the messages.
+Deploy the Message-Function (of level 1) with a Dynamo-DB to persist the messages.
 
 Notes:
 - It is possible to keep using the same Image for the function. But you have to provide a environment varibale and a policy, to persist the data.

@@ -57,3 +57,21 @@ If you completed the level, talk to the tutor. He will provide you the link to t
 ```bash
 cdk destroy
 ```
+
+<br>
+<br>
+<hr>
+
+<b>Side Note</b>: If the commented queue is not available in your project, this is how it looks like in `typescript`:
+
+```
+    import * as sqs from 'aws-cdk-lib/aws-sqs';
+    ...
+    //example resource
+    const queue = new sqs.Queue(this, 'ExampleProjectQueue', {
+        visibilityTimeout: cdk.Duration.seconds(300)
+    });
+    ...
+```
+
+Adapt it to your programming language of choice and add it to the stack. You will need the Queue later on.
